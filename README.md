@@ -87,7 +87,7 @@ and object_name (ob.object_id) in ('Planningedit','Bom','Material', 'movement')
 select * 
 from 
 (
-SELECT TOP 25
+SELECT 
 dm_mid.database_id AS DatabaseID,
 dm_migs.avg_user_impact*(dm_migs.user_seeks+dm_migs.user_scans) Avg_Estimated_Impact,
 dm_migs.last_user_seek AS Last_User_Seek,
